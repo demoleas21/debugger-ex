@@ -10,16 +10,15 @@ while True:
     pdb.set_trace()
 
     print "To exit this game type 'exit'\n"
-    answer = raw_input("What is {} times {}? ".format(choice(random2), choice(random1)))
+    num1 = choice(random2)
+    num2 = choice(random1)
+    answer = raw_input("What is {} times {}? ".format(num1, num2))
 
     if answer == 'exit':
         print "Now exiting game!"
         sys.exit()
 
-    test = int(choice(random2)*choice(random1))
-    """
-    elif answer == choice(random2) * choice(random1):
+    elif int(answer) == num1 * num2:
         print "Correct!\n"
     else:
         print "Wrong!\n"
-    """
