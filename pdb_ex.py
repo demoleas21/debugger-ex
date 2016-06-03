@@ -16,7 +16,10 @@ while True:
         print "Now exiting game!"
         sys.exit()
 
+    test = int(choice(random2)*choice(random1))
+    """
     elif answer == choice(random2) * choice(random1):
         print "Correct!\n"
     else:
         print "Wrong!\n"
+    """
